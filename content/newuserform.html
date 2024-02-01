@@ -7,27 +7,27 @@
 </head>
 <body>
     <form action="" method="post">
-        <fieldset>
-            <legend>Information</legend>
+        <section>
             <label for="first_name"><span aria-label="required">*</span>First Name:</label>
             <input type="text" id="first_name" name="first_name" placeholder="John...">
 
             <label for="last_name">Last Name:</label>
             <input type="text" id="last_name" name="last_name" placeholder="Doe...">
-        </fieldset>
-        <fieldset>
+        </section>
+        <section>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="first.last">
-        </fieldset>
-        <fieldset>
+        </section>
+        <section>
             <label for ="user_email">Email Address:</label>
             <input type="email" id="user_email" name="email" placeholder="username@test.com">
-        </fieldset>
-        <fieldset>
+        </section>
+        <section>
             <label for="user_password">Password</label>
             <input type="password" id="user_password" name="password">
-        </fieldset>
+        </section>
         <fieldset>
+            <legend>Job Position</legend>
             <label for="job_position">Position</label>
             <select id="job_position"name="job_position">
                 <option value="rd_engineer">R&D Engineer</option>
@@ -36,7 +36,7 @@
             </select>
         </fieldset>
         <fieldset>
-            <p>Office Location<p>
+            <legend>Office Location</legend>
             <div>
                 <input type="radio" id="main" name="office_location" value="main">
                 <label for="main">Main</label>
@@ -51,7 +51,7 @@
             </div>
         </fieldset>
         <fieldset>
-        <p>Equipment</p>
+            <legend>Equipment</legend>
             <div>
                 <input type="checkbox" id="laptop" name="equipment" value="laptop">
                 <label for="laptop">Laptop</label>
@@ -65,10 +65,10 @@
                 <label for="dock">Dock</label>
             </div>
         </fieldset>
-        <fieldset>
+        <section>
             <label for="start_date">Start Date:</label>
             <input type="date" id="start_date" name="start_date">
-        </fieldset>
+        </section>
         <button type="submit">Submit</button>
         <button type="button">Click to toggle</button>
     </form>
