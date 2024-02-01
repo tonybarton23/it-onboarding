@@ -7,16 +7,67 @@
 </head>
 <body>
     <form action="" method="post">
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="first_name" placeholder="John...">
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" placeholder="Doe...">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="first.last">
-        <label for ="user_email">Email Address:</label>
-        <input type="email" id="user_email" name="email" placeholder="username@test.com">
-        <label for="user_password">Password</label>
-        <input type="password" id="user_password" name="password">
+        <fieldset>
+            <legend>Information</legend>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" placeholder="John...">
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Doe...">
+        </fieldset>
+        <fieldset>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="first.last">
+        </fieldset>
+        <fieldset>
+            <label for ="user_email">Email Address:</label>
+            <input type="email" id="user_email" name="email" placeholder="username@test.com">
+        </fieldset>
+        <fieldset>
+            <label for="user_password">Password</label>
+            <input type="password" id="user_password" name="password">
+        </fieldset>
+        <fieldset>
+            <label for="job_position">Position</label>
+            <select id="job_position"name="job_position">
+                <option value="rd_engineer">R&D Engineer</option>
+                <option value="quality_engineer">Quality Engineer</option>
+                <option value="hr">HR</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>Office Location<p>
+            <div>
+                <input type="radio" id="main" name="office_location" value="main">
+                <label for="main">Main</label>
+            </div>
+            <div>
+                <input type="radio" id="admin" name="office_location" value="admin">
+                <label for="admin">Admin</label>
+            </div>
+            <div>
+                <input type="radio" id="remote" name="office_location" value="remote">
+                <label for="remote">Remote</label>
+            </div>
+        </fieldset>
+        <fieldset>
+        <p>Equipment</p>
+            <div>
+                <input type="checkbox" id="laptop" name="equipment" value="laptop">
+                <label for="laptop">Laptop</label>
+            </div>
+            <div>
+                <input type="checkbox" id="monitor" name="equipment" value="monitor">
+                <label for="monitor">Monitor</label>
+            </div>
+            <div>
+                <input type="checkbox" id="dock" name="equipment" value="dock">
+                <label for="dock">Dock</label>
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Click to toggle</button>
     </form>
 </body>
 </html>
