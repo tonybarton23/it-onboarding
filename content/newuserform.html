@@ -7,25 +7,25 @@
 </head>
 <body>
     <form action="" method="post">
-        <section>
+        <p>
             <label for="first_name"><span aria-label="required">*</span>First Name:</label>
             <input type="text" id="first_name" name="first_name" placeholder="John...">
 
             <label for="last_name">Last Name:</label>
             <input type="text" id="last_name" name="last_name" placeholder="Doe...">
-        </section>
-        <section>
+        </p>
+        <p>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="first.last">
-        </section>
-        <section>
+        </p>
+        <p>
             <label for ="user_email">Email Address:</label>
             <input type="email" id="user_email" name="email" placeholder="username@test.com">
-        </section>
-        <section>
+        </p>
+        <p>
             <label for="user_password">Password</label>
             <input type="password" id="user_password" name="password">
-        </section>
+        </p>
         <fieldset>
             <legend>Job Position</legend>
             <label for="job_position">Position</label>
@@ -37,18 +37,20 @@
         </fieldset>
         <fieldset>
             <legend>Office Location</legend>
-            <div>
-                <input type="radio" id="main" name="office_location" value="main">
-                <label for="main">Main</label>
-            </div>
-            <div>
-                <input type="radio" id="admin" name="office_location" value="admin">
-                <label for="admin">Admin</label>
-            </div>
-            <div>
-                <input type="radio" id="remote" name="office_location" value="remote">
-                <label for="remote">Remote</label>
-            </div>
+            <ul>
+                <li>
+                    <input type="radio" id="main" name="office_location" value="main">
+                    <label for="main">Main</label>
+                </li>
+                <li>
+                    <input type="radio" id="admin" name="office_location" value="admin">
+                    <label for="admin">Admin</label>
+                </li>
+                <li>
+                    <input type="radio" id="remote" name="office_location" value="remote">
+                    <label for="remote">Remote</label>
+                </li>
+            </ul>
         </fieldset>
         <fieldset>
             <legend>Equipment</legend>
